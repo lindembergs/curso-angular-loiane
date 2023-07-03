@@ -8,4 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'curso-angular-loiane';
   sayHello: string = 'Hello world';
-}
+
+
+  constructor(){
+
+  }
+
+
+
+  }
+
+
+
+
+
