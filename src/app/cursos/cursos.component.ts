@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./cursos.component.css']
 })
 export class CursosComponent {
+  nomePortal: string;
 
+  constructor(){
+    this.nomePortal = 'http://www.google.com';
+  }
 }
