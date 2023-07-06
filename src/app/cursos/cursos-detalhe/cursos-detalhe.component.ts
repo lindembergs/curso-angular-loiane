@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
 export class CursosDetalheComponent {
 
 
+  cursos : string[] = ['java', 'android', 'ios',];
+
 
 }
