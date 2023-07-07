@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { CursosModule} from './cursos/cursos.module';
 import { AppComponent } from './app.component';
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
+import { CursosService } from './cursos/cursos/cursos.service';
 
 
 
@@ -22,14 +23,6 @@ import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
     AppComponent,
     MeuPrimeiroComponent,
 
-
-
-
-
-
-
-
-
   ],
   imports: [
     BrowserModule,
@@ -37,14 +30,8 @@ import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
     FormsModule,
     CursosModule
 
-
-
-
-
-
-
   ],
-  providers: [],
+  providers: [CursosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
