@@ -9,6 +9,7 @@ import { CursosModule} from './cursos/cursos.module';
 import { AppComponent } from './app.component';
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
 import { CursosService } from './cursos/cursos/cursos.service';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 
 
@@ -22,6 +23,7 @@ import { CursosService } from './cursos/cursos/cursos.service';
   declarations: [
     AppComponent,
     MeuPrimeiroComponent,
+    DataBindingComponent,
 
   ],
   imports: [
