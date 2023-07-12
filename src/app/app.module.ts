@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
 import { CursosService } from './cursos/cursos/cursos.service';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -30,7 +31,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CursosModule
+    CursosModule,
+    BrowserAnimationsModule
 
   ],
   providers: [CursosService],
