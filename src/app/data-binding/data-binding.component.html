@@ -1,10 +1,30 @@
-
-  <p>o link do facebook é {{ url }}</p>
+<!-- <p>o link do facebook é {{ url }}</p>
 
   <p>o resultado de 2 + 2 é: {{ 2 + 2}}</p>
 
-  <p> falso com falso é: {{ verdadeiro && False() }}</p>
+  <p> falso com falso é: {{ verdadeiro && False() }}</p> -->
 
-  <img [src]="urlImagem" alt="imagem não carrega">
+<img [src]="urlImagem" alt="imagem não carrega">
 
-  teste branch
+<section>
+  <div>
+    <select #classe (change)="0">
+      <option value="alert-success">sucesso</option>
+      <option value="alert-info">info</option>
+      <option value="alert-warning">warning</option>
+      <option value="alert-danger">danger</option>
+    </select>
+  </div> <br><br>
+
+  <div class="alert" [class.alert-success]="classe.value == 'alert-success'">sucesso</div>
+  <div class="alert" [class.alert-info]="classe.value == 'alert-info'">info</div>
+  <div class="alert" [class.alert-warning]="classe.value == 'alert-warning'">warning</div>
+  <div class="alert" [class.alert-danger]="classe.value == 'alert-danger'">danger</div>
+
+
+</section>
+
+<div class="alert {{classe.value}}">
+  texto colorido de acordo com o combo-box
+
+</div>
