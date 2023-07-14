@@ -21,8 +21,12 @@ export class DataBindingComponent {
     return alert('evento com sucesso')
   }
 
+  valorAtual: string ='';
+
   onKeyUp(evento: KeyboardEvent){
-        console.log(evento)
+
+    this.valorAtual = (<HTMLInputElement>evento.target).value;
+
   }
 
   constructor(){
