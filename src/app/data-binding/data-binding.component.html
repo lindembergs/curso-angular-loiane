@@ -4,9 +4,11 @@
 
   <p> falso com falso é: {{ verdadeiro && False() }}</p> -->
 
-<img [src]="urlImagem" alt="imagem não carrega">
+<figure>
+  <img [src]="urlImagem" alt="imagem não carrega">
+</figure>
 
-<section>
+<!-- <section>
   <div>
     <select #classe (change)="0">
       <option value="alert-success">sucesso</option>
@@ -31,6 +33,13 @@
 
 <div class="alert alert-success" [style.display]="classe.value == 'alert-success' ? 'block' : 'none'">
   testo apenas se ouvir sucesso
+</div> -->
+<div>
+  <button class="btn btn-primary" (dblclick)="criarAlerta()">clique aqui</button>
 </div>
 
-<button class="btn btn-primary" (click)="criarAlerta()">clique aqui</button>
+
+
+<div>
+  <input type="text" (keyup)="onKeyUp($event)" />
+</div>
