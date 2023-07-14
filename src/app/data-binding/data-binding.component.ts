@@ -17,6 +17,10 @@ export class DataBindingComponent {
     return false;
   }
 
+  criarAlerta(){
+    return alert('evento com sucesso')
+  }
+
   constructor(){
     this.url = 'www.facebook.com'
   }

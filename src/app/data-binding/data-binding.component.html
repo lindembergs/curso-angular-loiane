@@ -28,3 +28,9 @@
   texto colorido de acordo com o combo-box
 
 </div>
+
+<div class="alert alert-success" [style.display]="classe.value == 'alert-success' ? 'block' : 'none'">
+  testo apenas se ouvir sucesso
+</div>
+
+<button class="btn btn-primary" (click)="criarAlerta()">clique aqui</button>
