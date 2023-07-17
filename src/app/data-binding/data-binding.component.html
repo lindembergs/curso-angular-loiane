@@ -48,7 +48,7 @@
 
  -->
 
-<article>
+<!-- <article>
   <h3>
     event binding
   </h3>
@@ -57,7 +57,7 @@
   </div>
 </article>
 
-<br><br>
+<br><br> -->
 
 <!-- código com erro aqui -->
 
@@ -65,7 +65,7 @@
 
 <!-- código corrigido aqui abaixo -->
 
-<input #campoInput type="text"
+<!-- <input #campoInput type="text"
   (keyup)="onKeyUp($event)"
   (keyup.enter)="salvarValor(campoInput.value)"
   (blur)="salvarValor(campoInput.value)">
@@ -74,5 +74,26 @@
 
 <div>
   <span> valor atual é: {{valorAtual}}</span>
-  <span> valor salvo: {{valorSalvo}}</span>
-</div>
+  <span > valor salvo: {{valorSalvo}}</span>
+</div> -->
+
+<!-- <p [class.tinta] (mouseover)="onMouseOverOut()">aaaa</p> -->
+
+<input #twoWay type="text"
+[ngModel]="nome"
+(ngModelChange)="nome = twoWay.value"
+>
+
+
+<p>o valor do input é {{nome}} </p>
+
+<!-- forma simplicicada de eventos com ngModel e towWay -->
+
+<input  type="text"
+[(ngModel)]="nome"
+>
+
+
+<p>o valor do input é {{nome}} </p>
+
+

@@ -10,6 +10,9 @@ export class DataBindingComponent {
 
    valorSalvo: any = '' ;
 
+   mouse: boolean = false;
+
+   nome: string = 'abc' ;
 
 
 
@@ -28,6 +31,14 @@ export class DataBindingComponent {
      this.valorAtual = (<HTMLInputElement>evento.target).value ;
 
   }
+
+onMouseOverOut(){
+   this.mouse = !this.mouse
+}
+
+doisCaminhos(){
+  this.nome = this.nome
+}
 
 
 
