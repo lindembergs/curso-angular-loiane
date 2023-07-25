@@ -1,8 +1,99 @@
-
-  <p>o link do facebook é {{ url }}</p>
+<!-- <p>o link do facebook é {{ url }}</p>
 
   <p>o resultado de 2 + 2 é: {{ 2 + 2}}</p>
 
-  <p> falso com falso é: {{ verdadeiro && False() }}</p>
+  <p> falso com falso é: {{ verdadeiro && False() }}</p> -->
 
+<!-- <figure>
   <img [src]="urlImagem" alt="imagem não carrega">
+</figure> -->
+
+<!-- <section>
+  <div>
+    <select #classe (change)="0">
+      <option value="alert-success">sucesso</option>
+      <option value="alert-info">info</option>
+      <option value="alert-warning">warning</option>
+      <option value="alert-danger">danger</option>
+    </select>
+  </div> <br><br>
+
+  <div class="alert" [class.alert-success]="classe.value == 'alert-success'">sucesso</div>
+  <div class="alert" [class.alert-info]="classe.value == 'alert-info'">info</div>
+  <div class="alert" [class.alert-warning]="classe.value == 'alert-warning'">warning</div>
+  <div class="alert" [class.alert-danger]="classe.value == 'alert-danger'">danger</div>
+
+
+</section>
+
+<div class="alert {{classe.value}}">
+  texto colorido de acordo com o combo-box
+
+</div>
+
+<div class="alert alert-success" [style.display]="classe.value == 'alert-success' ? 'block' : 'none'">
+  testo apenas se ouvir sucesso
+</div> -->
+<!-- <div>
+  <button class="btn btn-primary" (dblclick)="criarAlerta()">clique aqui</button>
+</div>
+
+
+
+<div>
+  <input type="text" (keyup)="onKeyUp($event)" />
+</div>
+
+<p>valor atual {{valorAtual}}</p>
+
+ -->
+
+<!-- <article>
+  <h3>
+    event binding
+  </h3>
+  <div>
+    <button #classe (click)="botaoClicado()" class="btn btn-primary">clique aqui</button>
+  </div>
+</article>
+
+<br><br> -->
+
+<!-- código com erro aqui -->
+
+<!-- <input  type="text" (keyup)="onKeyUp($event)" (keyup.enter)="salvarValor($event.target.value)"> -->
+
+<!-- código corrigido aqui abaixo -->
+
+<!-- <input #campoInput type="text"
+  (keyup)="onKeyUp($event)"
+  (keyup.enter)="salvarValor(campoInput.value)"
+  (blur)="salvarValor(campoInput.value)">
+
+
+
+<div>
+  <span> valor atual é: {{valorAtual}}</span>
+  <span > valor salvo: {{valorSalvo}}</span>
+</div> -->
+
+<!-- <p [class.tinta] (mouseover)="onMouseOverOut()">aaaa</p> -->
+
+<input #twoWay type="text"
+[ngModel]="nome"
+(ngModelChange)="nome = twoWay.value"
+>
+
+
+<p>o valor do input é {{nome}} </p>
+
+<!-- forma simplicicada de eventos com ngModel e towWay -->
+
+<input  type="text"
+[(ngModel)]="nome"
+>
+
+
+<p>o valor do input é {{nome}} </p>
+
+
