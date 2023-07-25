@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit,} from '@angular/core';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-data-binding',
@@ -6,13 +10,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data-binding.component.css']
 })
 export class DataBindingComponent {
+ crioMesmo:string='';
    valorAtual: any = '' ;
 
    valorSalvo: any = '' ;
 
    mouse: boolean = false;
 
-   nome: string = 'abc' ;
+   nome: string = '' ;
+
+   liveReload: number = 1 ;
 
 
 
@@ -23,7 +30,7 @@ export class DataBindingComponent {
   }
 
   salvarValor(valor: string){
-    this.valorSalvo = valor ;
+    this.valorSalvo = valor.toUpperCase;
   }
 
   onKeyUp(evento: KeyboardEvent){
@@ -43,9 +50,8 @@ doisCaminhos(){
 
 
 
-  constructor(){
 
+constructor(private http: HttpClient) { }
 
-  }
 
 }

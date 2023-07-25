@@ -1,0 +1,28 @@
+{
+  "carros": [
+    {
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "ano": 2020,
+      "preco": 85000
+    },
+    {
+      "marca": "Honda",
+      "modelo": "Civic",
+      "ano": 2021,
+      "preco": 80000
+    },
+    {
+      "marca": "Ford",
+      "modelo": "Fiesta",
+      "ano": 2019,
+      "preco": 55000
+    },
+    {
+      "marca": "Volkswagen",
+      "modelo": "Golf",
+      "ano": 2022,
+      "preco": 90000
+    }
+  ]
+}
