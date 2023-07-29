@@ -20,17 +20,10 @@ export class HttpService {
   }
 
 
-  getData(): Observable<any> {
-    return this.HttpClient.get(`${this.API_PATH}`).pipe(
-      catchError((error) => {
-        // Trate o erro aqui
-        console.error('Ocorreu um erro:', error);
-        return throwError('Algo deu errado. Tente novamente mais tarde.');
-      })
-    );
+  obterTodos(): Observable<any> {
+    return this.HttpClient.get(`${this.API_PATH}`)
+    ;
   }
-
-
 }
 
 
